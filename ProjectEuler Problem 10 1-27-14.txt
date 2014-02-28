@@ -1,0 +1,18 @@
+public class HelloWorld{
+    public static void main(String []args){
+        long stop = 2000000L;
+        boolean keep = true;
+        long total = 0L;
+        for(long i = 2; i < stop; i++) {
+            for(long b = 2; b < i; b++) {
+                if(i % b == 0) {
+                    keep = false;
+                    break;
+                }
+            }
+            if(keep == true) total += i;
+            else keep = true;
+        }
+        System.out.println(total);
+    }
+}

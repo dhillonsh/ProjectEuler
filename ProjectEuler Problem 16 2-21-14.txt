@@ -1,0 +1,14 @@
+import java.math.BigDecimal;
+public class HelloWorld{
+     public static void main(String []args){
+        double myvalue = Math.pow(2,1000);
+        BigDecimal num = new BigDecimal(myvalue);
+        String str = new BigDecimal(myvalue).toPlainString();
+        int total = 0, toAdd = 0;
+        for(int i = 0; i < str.length(); i++) {
+            total += Integer.parseInt(str.substring(i,i + 1));
+        }
+        System.out.println(num);
+        System.out.println("Total: " + total);
+     }
+}

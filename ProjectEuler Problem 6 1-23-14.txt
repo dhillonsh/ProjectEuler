@@ -1,0 +1,14 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        int sumSquare = 0;
+        int Square = 0;
+        for(int a = 1; a <= 100; a++) {
+            sumSquare += a;
+            Square += Math.pow(a,2);
+        }
+        System.out.println(sumSquare);
+        sumSquare *= sumSquare;
+        System.out.println(sumSquare + " - " + Square + " = " + (sumSquare - Square));
+     }
+}

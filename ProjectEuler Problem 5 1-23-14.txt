@@ -1,0 +1,28 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        int a = 1;
+        boolean toAdd = false;
+        while(true) {
+            toAdd = true;
+            for(int i = 1; i < 21; i++) {
+                if(a / i > 0 && a % i == 0 ) {
+                    
+               } else {
+                    toAdd = false;
+                    break;
+                    
+                }
+                
+            }
+            if(toAdd == true) {
+                System.out.println("A: [" + a + "]");
+                break;
+            }
+            a++;
+            //System.out.println(a);
+        }
+        System.out.println(a);
+        
+     }
+}

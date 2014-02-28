@@ -1,0 +1,22 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        long start = 13, i = 13;
+        int count = 1, endC = 0;
+        while(true) {
+            while(true) {
+                if(i % 2 == 0) i /= 2;
+                else i = (3 * i) + 1;
+                count++;
+                if(i == 1) break;
+            }
+            if(count > endC) endC = count;
+            start++;
+            if(start > 1000000) break;
+            i = start;
+            count = 1;
+        
+        }
+        System.out.println(endC);
+     }
+}

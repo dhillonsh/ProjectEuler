@@ -1,0 +1,25 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        String max = "0";
+        boolean toAdd = true;
+        for(int i = 100; i < 1000; i++) {
+            for(int a = 100; a < 1000; a++) {
+                toAdd = true;
+                String product = Integer.toString(i * a);
+                for(int b = 0; b < product.length(); b++) {
+                    if(product.charAt(b) != (product.charAt(product.length() - b - 1))) {
+                        //System.out.println("bad");
+                        toAdd = false;
+                        break;
+                    }
+                }
+                if(toAdd == true) {
+                    if(Integer.parseInt(product) > Integer.parseInt(max)) max = product;
+                   //System.out.println(max);
+                }
+            }
+        }
+        System.out.println("Max: " + Integer.parseInt(max));
+     }
+}

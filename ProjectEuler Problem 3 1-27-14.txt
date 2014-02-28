@@ -1,0 +1,16 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+       long start = 600851475143L;
+       for(long i = 2; i < start; i++) {
+           boolean stop = false;
+           for(long b = 2; b < i; b++) {
+               if(i % b == 0){
+                   stop = true;
+                   break;
+               }
+           }
+           if(stop == false && start % i == 0) System.out.println(i);   
+       }
+     }
+}

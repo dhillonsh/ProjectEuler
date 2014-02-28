@@ -1,0 +1,13 @@
+public class HelloWorld {
+    public static void main(String []args){
+        long current = 600851475143;
+        int largest = 1;
+        for(int i = 0; i < current; i++) {
+            if(current % i == 0) largest = i;
+            
+            
+        }
+        
+        System.out.println(largest);
+    }
+}

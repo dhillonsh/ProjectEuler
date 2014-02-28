@@ -1,0 +1,19 @@
+public class HelloWorld{
+    public static void main(String []args){
+        long i = 1L;
+        int count = 0;
+        while(true) {
+          i++;
+            boolean stop = false;
+            for(long b = 2; b < i; b++) {
+                if(i % b == 0){
+                    stop = true;
+                    break;
+                }
+            }
+            if(stop == false) count++;
+            if(count == 10001) break;
+        }
+        System.out.println(i);
+    }
+}

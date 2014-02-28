@@ -1,0 +1,14 @@
+<?php
+$arr = array();
+for($i = 2; $i < 2000000; $i++) {
+  $bad = false;
+  for($b = 2; $b < $i; $b++) {
+    if($i % $b == 0) {
+      $bad = true;
+      break;
+    }
+  }
+ if($bad == false) $arr[] = $i; 
+}
+echo array_sum($arr);
+?>
